@@ -68,7 +68,7 @@ in
     ];
 
     env = {
-      NEXT_PUBLIC_SITE_URL = "https://uzbek.net.uz";
+      NEXT_PUBLIC_SITE_URL = "https://uzbek-net.github.io/website";
     };
 
     meta = with pkgs.lib; {
