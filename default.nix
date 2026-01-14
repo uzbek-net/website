@@ -24,7 +24,7 @@ in
     version = manifest.version;
 
     src = ./.;
-    npmDepsHash = "sha256-m9CNicV8x9sWmDChjHd1Tf53ryQiZmkH1jYC7DCnkWk=";
+    npmDepsHash = "sha256-aQePmCqVWWRF5/AFJXt1Jfp009Ku+cVA8tZ4Y6jRSfM=";
 
     installPhase = ''
       # Create output directory
@@ -51,15 +51,9 @@ in
     '';
 
     nativeBuildInputs = with pkgs; [
-      # Typescript
       nodejs
       pnpm
       corepack
-
-      # Hail the Nix
-      nixd
-      statix
-      alejandra
     ];
 
     buildInputs = with pkgs; [
