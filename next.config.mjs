@@ -6,11 +6,6 @@ import remarkGfm from 'remark-gfm'
 const nextConfig = {
   output: 'standalone',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  experimental: {
-    outputFileTracingIncludes: {
-      '/articles/*': ['./src/app/articles/**/*.mdx'],
-    },
-  },
 }
 
 const withMDX = nextMDX({
